@@ -584,12 +584,6 @@ const QUIZ_CATEGORIES = [
       const question = `<h4>${rawQuiz.question ? this._htmlEntities(rawQuiz.question) : ''}</h4>`;
       let description = '', inputs = '', madeBy = '';
   
-      if (rawQuiz.madeBy) {
-        madeBy = `<div class="made-by">by ${
-          this._htmlEntities(rawQuiz.madeBy)
-        }</div>`;
-      }
-  
       switch (rawQuiz.type) {
         case 'checkbox':
         case 'radio':
